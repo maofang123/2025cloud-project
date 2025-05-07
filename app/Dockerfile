@@ -1,3 +1,4 @@
+# Introduce an invalid base image to simulate failure
 FROM invalid-base-image
 
 WORKDIR /app
