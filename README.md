@@ -101,3 +101,4 @@ graph TD;
     Build --> Push[Push Images to Docker Hub];
     Push --> Deploy[Deploy Containers Locally or Remotely];
 *Developed for the 2025cloud Docker assignment.*
+```
