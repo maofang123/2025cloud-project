@@ -93,4 +93,11 @@ docker push your-dockerhub-username/2025cloud-app:latest
 
 ---
 
+## 📊 Workflow Overview
+
+```mermaid
+graph TD;
+    Code[Push Code to GitHub] -->|Trigger Workflow| Build[Build Docker Images];
+    Build --> Push[Push Images to Docker Hub];
+    Push --> Deploy[Deploy Containers Locally or Remotely];
 *Developed for the 2025cloud Docker assignment.*
