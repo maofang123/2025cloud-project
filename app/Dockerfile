@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM invalid-base-image
 
 WORKDIR /app
 COPY app.py .
