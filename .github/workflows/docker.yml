@@ -1,4 +1,4 @@
-name: Build and Push Docker Images
+name: Build and Push to Single Repo
 
 on:
   push:
@@ -23,11 +23,11 @@ jobs:
       with:
         context: ./nginx
         push: true
-        tags: jmf109u/2025cloud-nginx:latest
+        tags: jmf109u/2025cloud:nginx
 
     - name: Build and push App image
       uses: docker/build-push-action@v5
       with:
         context: ./app
         push: true
-        tags: jmf109u/2025cloud-app:latest
+        tags: jmf109u/2025cloud:app
